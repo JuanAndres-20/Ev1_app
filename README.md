@@ -1,3 +1,3 @@
-*Trabajo de Aplicación WEB
-Estudiante: Juan Andrés Meza Vega
+*Trabajo de Aplicación WEB<br>
+Estudiante: Juan Andrés Meza Vega<br>
 Abrir index.html
