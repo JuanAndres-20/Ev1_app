@@ -2,51 +2,145 @@
 <html>
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <title>Pagina Cosmeticos</title>
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2113.65">
-<link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
   <div class="container">
     <div class="header">
-    <img src="./assets/images/logo.png" alt="logo">
-    <button>Ventas</button>
-    <button>Comenzar ahora</button>
+      <img src="./assets/images/logo.png" alt="logo">
+      <div class="nav-buttons">
+        <button>Ventas</button>
+        <button>Comenzar ahora</button>
+      </div>
     </div>
 
     <div class="primero">
       <div class="imagen">
-        <img src="./assets/images/img1.png">
+        <img src="./assets/images/img1.png" alt="Imagen sobre nosotros">
       </div>
-      <div class="2">
+      <div class="about-content">
         <h1>Sobre nosotros</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel felis viverra, placerat lectus eget, malesuada purus. Nulla facilisi. Donec sed justo vel justo consectetur varius.</p>
+        <p>En DaniMode nos dedicamos a crear productos de belleza de alta calidad que resaltan la belleza natural de cada persona. Nuestra pasión por la innovación y el compromiso con ingredientes naturales nos distingue en el mercado.</p>
         <button>Comenzar ahora</button>
       </div>
-      <div class="3">
-
-      </div>
-      <div class="4">
-
-      </div>
     </div>
+    <section class="valor-agregado">
+      <div class="container valor-contenido">
+        <div class="valor-texto">
+          <h2>¿Por qué elegirnos?</h2>
+          <p>Ofrecemos una experiencia única con productos seleccionados cuidadosamente y atención personalizada. Nuestro compromiso es brindarte calidad, estilo y un servicio excepcional que hará que vuelvas una y otra vez.</p>
+        </div>
+        <div class="valor-imagen">
+          <img src="./assets/images/happy.png" alt="Clientes felices">
+        </div>
+      </div>
+    </section>
+    
+    
     <div class="segundo">
-      <div class="1"></div>
-      <div class="2"></div>
-      <div class="3"></div>
-    </div>
-    <div class="footer">
-      <div class="1">
-        <div class="1.1"></div>
-        <div class="1.2"></div>
+      <h2>Nuestros Productos</h2>
+      <div class="productos-grid">
+        <div class="producto">
+          <img src="./assets/images/prod1.png" alt="Crema facial">
+          <div class="producto-info">
+            <h3>Crema Hidratante</h3>
+            <p>Crema facial con aloe vera y extractos naturales para una hidratación profunda.</p>
+            <div class="precio">$24.990</div>
+            <button>Comprar ahora</button>
+          </div>
+        </div>
+        <div class="producto">
+          <img src="./assets/images/prod2.png" alt="Sérum facial">
+          <div class="producto-info">
+            <h3>Sérum Facial</h3>
+            <p>Sérum con vitamina C para iluminar y rejuvenecer tu piel cada día.</p>
+            <div class="precio">$19.990</div>
+            <button>Comprar ahora</button>
+          </div>
+        </div>
+        <div class="producto">
+          <img src="./assets/images/prod3.png" alt="Kit de maquillaje">
+          <div class="producto-info">
+            <h3>Kit de Maquillaje</h3>
+            <p>Set completo con paleta de sombras, labial y máscara de pestañas.</p>
+            <div class="precio">$39.990</div>
+            <button>Comprar ahora</button>
+          </div>
+        </div>
       </div>
-      <div class="2"></div>
+    </div>
+
+    <div class="contacto">
+      <h2>Contáctanos</h2>
+      <form class="formulario">
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+56 9 XXXX XXXX">
+        </div>
+        <div class="campo">
+          <label for="producto">Producto de interés</label>
+          <select id="producto" name="producto">
+            <option value="">Selecciona un producto</option>
+            <option value="crema">Crema Hidratante</option>
+            <option value="serum">Sérum Facial</option>
+            <option value="kit">Kit de Maquillaje</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu consulta aquí"></textarea>
+        </div>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <img src="./assets/images/logo.png" alt="logo">
+          <p>Dirección: Avenida San Miguel 3605, Talca.</p>
+          <p>Teléfono: +56998765432</p>
+          <p>Email: contacto@danimode.cl</p>
+          <div class="redes-sociales">
+            <a class="icono-social">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="icono-social">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="icono-social">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+          <div class="Desarrollador">
+            <h3>Desarrollador</h3>
+            <p>
+              <a href="perfil.html" class="perfil-enlace">Juan Andrés Meza Vega</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="derechos">
+        <p>&copy; 2025 DaniMode. Todos los derechos reservados.</p>
+      </div>
     </div>
   </div>
 
